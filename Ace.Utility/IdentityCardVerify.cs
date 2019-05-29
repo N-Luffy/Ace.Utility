@@ -10,6 +10,8 @@ namespace Ace.Utility
     /// </summary>
     public class IdentityCardVerify
     {
+        IdentityCardVerify() { }
+
         // 身份证前17位每位加权因子
         private static readonly int[] Power = { 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2 };
 
@@ -41,6 +43,7 @@ namespace Ace.Utility
         /// <returns></returns>
         public static bool CheckIdNo(string idNo)
         {
+            if (string.IsNullOrEmpty(idNo)) return false;
             if (idNo.Length == 15)
                 return Regex.Match(idNo, RegexIdNo15).Success;
             else if (idNo.Length == 18)
@@ -56,6 +59,7 @@ namespace Ace.Utility
         /// <returns></returns>
         public static string GetCheckCode(string idNo)
         {
+            if (string.IsNullOrEmpty(idNo)) return "";
             char[] tmp = idNo.ToCharArray();
             int[] cardidArray = new int[tmp.Length - 1];
             for (int i = 0; i < tmp.Length - 1; i++)
@@ -72,6 +76,7 @@ namespace Ace.Utility
         /// <returns></returns>
         public static string GetCheckCode(int[] idNoArray)
         {
+            if (idNoArray.Length < Power.Length) return "";
             int result = 0;
             for (int i = 0; i < Power.Length; i++)
             {
@@ -87,6 +92,7 @@ namespace Ace.Utility
         /// <returns></returns>
         public static bool ValidateCheckNumber(string idNo)
         {
+            if (string.IsNullOrEmpty(idNo)) return false;
             if (idNo.Length != 15 && idNo.Length != 18)
             {
                 return false;
@@ -101,7 +107,7 @@ namespace Ace.Utility
             {
                 lastNum = lastNum.ToUpper();
             }
-            if (!checkCode.Equals(lastNum, StringComparison.OrdinalIgnoreCase))
+            if (checkCode == "" || !checkCode.Equals(lastNum, StringComparison.OrdinalIgnoreCase))
             {
                 return false;
             }
@@ -118,6 +124,7 @@ namespace Ace.Utility
         /// <returns></returns>
         public static string ChangeIdNo15To18(string idNo)
         {
+            if (string.IsNullOrEmpty(idNo)) return "";
             if (idNo.Length == 15)
             {
                 idNo = idNo.Substring(0, 6) + "19" + idNo.Substring(6, idNo.Length - 6);
@@ -136,6 +143,7 @@ namespace Ace.Utility
         public static string GetSex(string idNo)
         {
             string strSex = string.Empty;
+            if (string.IsNullOrEmpty(idNo)) return strSex;
             if (idNo.Length == 18)
             {
                 strSex = idNo.Substring(14, 3);
@@ -159,6 +167,7 @@ namespace Ace.Utility
         public static string GetBirthday(string idNo, string format = "yyyy-MM-dd")
         {
             string birthday = string.Empty;
+            if (string.IsNullOrEmpty(idNo)) return birthday;
             if (idNo.Length == 18)
             {
                 birthday = idNo.Substring(6, 4) + "-" + idNo.Substring(10, 2) + "-" + idNo.Substring(12, 2);
@@ -179,7 +188,8 @@ namespace Ace.Utility
         /// <returns></returns>
         public static int GetAge(string birthDay)
         {
-            DateTime birthDate = DateTime.Parse(birthDay);
+            if (string.IsNullOrEmpty(birthDay)) return -1;
+            if (!DateTime.TryParse(birthDay, out DateTime birthDate)) return -1;
             DateTime nowDateTime = DateTime.Now;
             int age = nowDateTime.Year - birthDate.Year;
             //再考虑月、天的因素
