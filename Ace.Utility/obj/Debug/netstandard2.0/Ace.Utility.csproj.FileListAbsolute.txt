@@ -1,0 +1,6 @@
+D:\code\LocalCode\Ace.Utility\Ace.Utility\bin\Debug\netstandard2.0\Ace.Utility.deps.json
+D:\code\LocalCode\Ace.Utility\Ace.Utility\bin\Debug\netstandard2.0\Ace.Utility.dll
+D:\code\LocalCode\Ace.Utility\Ace.Utility\obj\Debug\netstandard2.0\Ace.Utility.csprojAssemblyReference.cache
+D:\code\LocalCode\Ace.Utility\Ace.Utility\obj\Debug\netstandard2.0\Ace.Utility.csproj.CoreCompileInputs.cache
+D:\code\LocalCode\Ace.Utility\Ace.Utility\obj\Debug\netstandard2.0\Ace.Utility.AssemblyInfoInputs.cache
+D:\code\LocalCode\Ace.Utility\Ace.Utility\obj\Debug\netstandard2.0\Ace.Utility.AssemblyInfo.cs
