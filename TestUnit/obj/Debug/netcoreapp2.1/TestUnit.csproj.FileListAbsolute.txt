@@ -1,0 +1,17 @@
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\TestUnit.deps.json
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\TestUnit.runtimeconfig.json
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\TestUnit.runtimeconfig.dev.json
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\TestUnit.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\TestUnit.pdb
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\Ace.Utility.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\bin\Debug\netcoreapp2.1\Ace.Utility.pdb
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.csprojAssemblyReference.cache
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.csproj.CoreCompileInputs.cache
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.AssemblyInfoInputs.cache
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.AssemblyInfo.cs
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.csproj.CopyComplete
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.dll
+D:\code\LocalCode\Ace.Utility\TestUnit\obj\Debug\netcoreapp2.1\TestUnit.pdb
