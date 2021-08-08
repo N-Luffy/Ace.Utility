@@ -1,7 +1,10 @@
 using System;
 using System.Collections.Generic;
+
 using Ace.Utility;
+
 using ConsoleApp1;
+
 using Xunit;
 
 namespace TestUnit
@@ -40,6 +43,20 @@ namespace TestUnit
                 Console.WriteLine(
                     $"开始执行 {DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss:ffffff")}   NO: {id} HashCode: {id.GetHashCode()}");
             }
+        }
+
+        [Fact]
+        public void AESTest()
+        {
+            var str = "Here is some data to encrypt!";
+
+            var key = "1234567890987654";
+
+            var encryptStr = Ace.Utility.AES.AesCrypto.Encrypt(str, key);
+            System.Diagnostics.Debug.WriteLine("AesCrypto 加密字符：" + encryptStr);
+
+            var decryptStr = Ace.Utility.AES.AesCrypto.Decrypt(encryptStr, key);
+            System.Diagnostics.Debug.WriteLine("AesCrypto 解密字符：" + decryptStr);
         }
     }
 }
