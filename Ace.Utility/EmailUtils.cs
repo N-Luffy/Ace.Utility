@@ -7,7 +7,7 @@ using MailKit;
 using MailKit.Net.Smtp;
 using MimeKit;
 
-namespace ConsoleApp1
+namespace Ace.Utility
 {
     public class EmailUtils
     {
