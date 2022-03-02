@@ -1,5 +1,6 @@
-/TestUnit/bin
-/TestUnit/obj
+.git
+/.vs
 /Ace.Utility/bin
 /Ace.Utility/obj
-/.vs
+/TestUnit/bin
+/TestUnit/obj
